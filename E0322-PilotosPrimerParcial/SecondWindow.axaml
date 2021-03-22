@@ -1,0 +1,38 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="E0322_PilotosPrimerParcial.SecondWindow"
+        SizeToContent="WidthAndHeight"
+        Title="Acciones">
+    <Border Padding="16">
+        <StackPanel>
+            <Label HorizontalAlignment="Center" FontSize="18" FontWeight="Bold">Buscar pilotos</Label>
+            
+            <StackPanel Orientation="Horizontal">
+                <Border Margin="8 0">
+                    <StackPanel>
+                        <Label>Nombre del piloto:</Label>
+                        <TextBox Name="TxbPilotName" HorizontalAlignment="Stretch"></TextBox>
+                        <Label>Marca de auto:</Label>
+                        <TextBox Name="TxbPilotCar" HorizontalAlignment="Stretch"></TextBox>
+                        <Label>Ciudad representada:</Label>
+                        <TextBox Name="TxbPilotCity" HorizontalAlignment="Stretch"></TextBox>
+                        <Button Margin="8" Content="Buscar piloto" HorizontalAlignment="Center" Click="BtnSearchPilot_Click"></Button>
+                    </StackPanel>
+                </Border>
+                <Border Margin="8 0">
+                    <StackPanel>
+                        <Label>Marca de auto de pilotos:</Label>
+                        <TextBox Name="TxbCarBrand" HorizontalAlignment="Stretch"></TextBox>
+                        <Button Margin="8" Content="Buscar pilotos" HorizontalAlignment="Center" Click="BtnSearchByCarBrand_Click"></Button>
+                    </StackPanel>
+                </Border>
+                <Button Margin="8 " Content="Mostrar todos los pilotos" Click="BtnShowAll_Click"></Button>
+            </StackPanel>
+            
+            <TextBlock Name="TblWarning"></TextBlock>
+        </StackPanel>
+    </Border>
+</Window>
